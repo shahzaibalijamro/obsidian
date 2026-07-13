@@ -1,36 +1,38 @@
-export default function StatsSection() {
-    return (
-        <>
+export interface Stat {
+    value: string;
+    label: string;
+}
 
-            <section className="py-24 bg-mesh-light section-curve-top section-curve-bottom">
-                <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
-                    <div className="glass-panel p-12">
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-gutter">
-                            <div className="text-center">
-                                <p className="font-display-lg text-headline-lg-mobile sm:text-headline-lg text-gradient-indigo mb-3">500+</p>
-                                <p className="font-label-md text-on-surface-variant tracking-wider uppercase">Projects Delivered
+export interface StatsSectionProps {
+    stats?: Stat[];
+}
+
+export default function StatsSection({
+    stats = [
+        { value: "500+", label: "Projects Delivered" },
+        { value: "12+", label: "Years Experience" },
+        { value: "98%", label: "Client Retention" },
+        { value: "250M+", label: "Revenue Generated" }
+    ]
+}: StatsSectionProps) {
+    return (
+        <section className="py-24 bg-mesh-light section-curve-top section-curve-bottom">
+            <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
+                <div className="glass-panel p-6 sm:p-12">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-gutter">
+                        {stats.map((stat, idx) => (
+                            <div key={idx} className="text-center">
+                                <p className="font-display-lg text-headline-lg-mobile sm:text-headline-lg text-gradient-indigo mb-3">
+                                    {stat.value}
+                                </p>
+                                <p className="font-label-md text-on-surface-variant tracking-wider uppercase">
+                                    {stat.label}
                                 </p>
                             </div>
-                            <div className="text-center">
-                                <p className="font-display-lg text-headline-lg-mobile sm:text-headline-lg text-gradient-indigo mb-3">12+</p>
-                                <p className="font-label-md text-on-surface-variant tracking-wider uppercase">Years Experience
-                                </p>
-                            </div>
-                            <div className="text-center">
-                                <p className="font-display-lg text-headline-lg-mobile sm:text-headline-lg text-gradient-indigo mb-3">98%</p>
-                                <p className="font-label-md text-on-surface-variant tracking-wider uppercase">Client Retention
-                                </p>
-                            </div>
-                            <div className="text-center">
-                                <p className="font-display-lg text-headline-lg-mobile sm:text-headline-lg text-gradient-indigo mb-3">250M+</p>
-                                <p className="font-label-md text-on-surface-variant tracking-wider uppercase">Revenue Generated
-                                </p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
-            </section>
-
-        </>
+            </div>
+        </section>
     );
 }

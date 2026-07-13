@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Header() {
@@ -25,7 +26,7 @@ export default function Header() {
         { href: "#industry", label: "Industry" },
         { href: "#case-studies", label: "Case Studies" },
         { href: "#blog", label: "Blog" },
-        { href: "#about", label: "About" },
+        { href: "/about", label: "About" },
         { href: "#contact", label: "Contact" },
     ];
 
@@ -36,9 +37,9 @@ export default function Header() {
 
             {/* Top bar content */}
             <div className="relative z-50 flex justify-between items-center max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop h-20">
-                <a className="font-display-lg text-headline-md font-bold tracking-tighter text-on-surface" href="#" onClick={closeMenu}>
+                <Link onClick={closeMenu} href={"/"} className="font-display-lg text-headline-md font-bold tracking-tighter text-on-surface">
                     OBSIDIAN
-                </a>
+                </Link>
 
                 {/* Desktop Nav */}
                 <div className="hidden lg:flex space-x-8">
@@ -69,11 +70,11 @@ export default function Header() {
                 <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[100px] pointer-events-none mix-blend-screen z-0"></div>
                 <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-inverse-primary/20 rounded-full blur-[120px] pointer-events-none mix-blend-screen z-0"></div>
 
-                <div className="relative z-10 flex flex-col items-center space-y-8 w-full px-8">
+                <div className="relative z-10 flex flex-col items-center space-y-4 w-full px-8">
                     {navLinks.map((link) => (
                         <a
                             key={link.href}
-                            className="text-on-surface font-display-lg text-3xl hover:text-primary transition-colors duration-300"
+                            className="text-on-surface font-display-lg text-xl hover:text-primary transition-colors duration-300"
                             href={link.href}
                             onClick={closeMenu}
                         >
