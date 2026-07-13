@@ -7,7 +7,7 @@ export default function TrustBadges() {
 
   return (
     <section className="py-16 bg-transparent overflow-hidden">
-      <div className="max-w-container-max mx-auto px-margin-desktop mb-8 text-center">
+      <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop mb-8 text-center">
         <p className="font-label-md text-on-surface-variant uppercase tracking-widest text-sm opacity-60">
           Trusted by Forward-Thinking Brands
         </p>

@@ -41,9 +41,9 @@ export default function FAQSection() {
 
   return (
     <section className="py-section-padding bg-mesh-light section-curve-top section-curve-bottom">
-      <div className="max-w-container-max mx-auto px-margin-desktop max-w-3xl">
+      <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop max-w-3xl">
         <div className="text-center mb-12">
-          <h2 className="font-display-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6">
+          <h2 className="font-display-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface mb-6">
             Frequently Asked Questions
           </h2>
           <p className="font-body-lg text-on-surface-variant">
@@ -52,8 +52,8 @@ export default function FAQSection() {
         </div>
         <div className="space-y-4">
           {faqs.map((faq, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="glass-panel p-6 rounded-2xl cursor-pointer group"
               onClick={() => setActiveIndex(activeIndex === idx ? null : idx)}
             >
