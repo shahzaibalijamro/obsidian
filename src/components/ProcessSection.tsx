@@ -44,7 +44,7 @@ export default function ProcessSection({
     ]
 }: ProcessSectionProps) {
     return (
-        <section className="py-section-padding bg-mesh-light section-curve-top section-curve-bottom overflow-hidden" id="process">
+        <section className="py-section-padding -top-10 relative bg-mesh-light section-curve-top section-curve-bottom overflow-hidden" id="process">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end mb-20">
                     <div>

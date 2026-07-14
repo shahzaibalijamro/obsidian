@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MissionVisionSection() {
     return (
-        <section className="py-section-padding bg-mesh-dark" id="mission-vision">
+        <section className="pt-[calc(var(--spacing-section-padding)+40px)] pb-[calc(var(--spacing-section-padding)+40px)] relative -top-10 -z-1 bg-mesh-dark" id="mission-vision">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="text-center mb-16">
                     <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/10 text-primary font-label-md border border-primary/20 backdrop-blur-sm uppercase tracking-wider">

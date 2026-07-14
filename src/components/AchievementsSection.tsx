@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AchievementsSection() {
     return (
-        <section className="py-24 bg-mesh-light section-curve-top section-curve-bottom" id="achievements">
+        <section className="py-24 relative -top-10 bg-mesh-light section-curve-top section-curve-bottom" id="achievements">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="text-center mb-16">
                     <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/10 text-primary font-label-md border border-primary/20 backdrop-blur-sm uppercase tracking-wider">

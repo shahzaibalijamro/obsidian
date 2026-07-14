@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TeamSection() {
     return (
-        <section className="py-section-padding bg-mesh-dark" id="meet-the-team">
+        <section className="pt-section-padding pb-[calc(var(--spacing-section-padding)+40px)] bg-mesh-dark" id="meet-the-team">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="text-center mb-20">
                     <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/10 text-primary font-label-md border border-primary/20 backdrop-blur-sm uppercase tracking-wider">

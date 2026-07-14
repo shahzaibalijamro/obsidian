@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ValuesSection() {
     return (
-        <section className="py-section-padding bg-mesh-light section-curve-top section-curve-bottom overflow-hidden" id="values">
+        <section className="py-section-padding relative -top-20 -z-1 bg-mesh-light section-curve-top section-curve-bottom overflow-hidden" id="values">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="text-center mb-20">
                     <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/10 text-primary font-label-md border border-primary/20 backdrop-blur-sm">

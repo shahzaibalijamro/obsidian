@@ -57,7 +57,7 @@ export default function ServicesSection({
     const bgClass = theme === 'dark' ? 'bg-mesh-dark' : 'bg-mesh-light section-curve-top section-curve-bottom';
 
     return (
-        <section className={`py-section-padding ${bgClass}`} id="services">
+        <section className={`pt-section-padding pb-[calc(var(--spacing-section-padding)+40px)] ${bgClass}`} id="services">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="text-center mb-20">
                     {badgeText && (
