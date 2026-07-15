@@ -25,9 +25,9 @@ export default function Header() {
         { href: "#location", label: "Location" },
         { href: "#industry", label: "Industry" },
         { href: "#case-studies", label: "Case Studies" },
-        { href: "#blog", label: "Blog" },
+        { href: "/blogs", label: "Blogs" },
         { href: "/about", label: "About" },
-        { href: "#contact", label: "Contact" },
+        { href: "/contact", label: "Contact" },
     ];
 
     return (

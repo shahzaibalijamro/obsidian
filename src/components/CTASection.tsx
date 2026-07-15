@@ -1,4 +1,9 @@
-export default function CTASection() {
+interface CTASectionProps {
+    buttonText?: string;
+    buttonHref?: string;
+}
+
+export default function CTASection({ buttonText = "Get Started", buttonHref = "#contact" }: CTASectionProps) {
     return (
         <>
 
@@ -12,8 +17,8 @@ export default function CTASection() {
                     <p className="font-body-lg text-white/80 mb-10 max-w-2xl mx-auto">Join the ranks of elite brands leveraging
                         our fluid design and engineering methodologies.</p>
                     <a className="inline-block px-10 py-5 bg-white text-inverse-primary font-label-md rounded-full text-center hover:bg-surface hover:text-white transition-all duration-300 shadow-xl"
-                        href="#contact">
-                        Get Started
+                        href={buttonHref}>
+                        {buttonText}
                     </a>
                 </div>
             </section>
