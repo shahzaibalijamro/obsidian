@@ -133,6 +133,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.text-glow {
+  text-shadow: 0 0 10px rgba(192, 193, 255, 0.3);
+}
+
 /* Auto-scrolling logo track */
 .logo-track {
   display: flex;

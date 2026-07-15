@@ -66,9 +66,9 @@ export default function Footer() {
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="font-body-md text-on-surface-variant text-sm text-center md:text-left">© 2026 OBSIDIAN,
                             All rights reserved.</p>
-                        <div className="flex gap-6"><a href="#"
+                        <div className="flex gap-6"><a href="/privacy"
                             className="font-body-md text-on-surface-variant text-sm hover:text-primary transition-colors duration-300">Privacy
-                            Policy</a><a href="#"
+                            Policy</a><a href="/terms"
                                 className="font-body-md text-on-surface-variant text-sm hover:text-primary transition-colors duration-300">Terms
                                 &amp; Conditions</a></div>
                     </div>
