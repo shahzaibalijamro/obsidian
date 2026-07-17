@@ -1,7 +1,5 @@
 "use client";
 import { useEffect, useState, ReactNode } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export interface DirectoryLink {
     id: string;
@@ -45,7 +43,6 @@ export default function LegalPageLayout({
 
     return (
         <>
-            <Header />
             <main className="flex-grow flex flex-col pt-32 pb-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full relative z-10">
                 {/* Hero Section */}
                 <header className="mb-24 md:mb-32 relative">
@@ -87,7 +84,6 @@ export default function LegalPageLayout({
                     </div>
                 </div>
             </main>
-            <Footer />
         </>
     );
 }

@@ -2,21 +2,21 @@
 
 import { useState } from "react";
 import ListingCard from "@/components/ListingCard";
-import { blogsData } from "@/data/blogs";
+import { caseStudiesData } from "@/data/case-studies";
 
-const categories = ["All Insights", "Technical SEO", "Digital Strategy", "UX Design", "Industry News"];
+const categories = ["All Work", "Technical SEO", "AI Integration", "Digital Strategy", "Social Media"];
 
-export default function BlogsPage() {
-  const [activeCategory, setActiveCategory] = useState("All Insights");
+export default function CaseStudiesPage() {
+  const [activeCategory, setActiveCategory] = useState("All Work");
 
-  const filteredBlogs = activeCategory === "All Insights"
-    ? blogsData
-    : blogsData.filter(blog => {
+  const filteredCaseStudies = activeCategory === "All Work"
+    ? caseStudiesData
+    : caseStudiesData.filter(study => {
       // Map filter categories to mock data categories
-      if (activeCategory === "Technical SEO") return blog.category.includes("SEO");
-      if (activeCategory === "Digital Strategy") return blog.category === "Strategy" || blog.category === "Growth" || blog.category === "Data" || blog.category === "Mastery";
-      if (activeCategory === "UX Design") return blog.category === "UX Design";
-      if (activeCategory === "Industry News") return false; // We don't have matching mock data for this, will show empty
+      if (activeCategory === "Technical SEO") return study.category.includes("SEO");
+      if (activeCategory === "AI Integration") return study.category.includes("AI");
+      if (activeCategory === "Digital Strategy") return study.category === "Strategy" || study.category === "Growth" || study.category === "Data" || study.category === "Mastery";
+      if (activeCategory === "Social Media") return study.category === "Social";
       return true;
     });
 
@@ -26,10 +26,10 @@ export default function BlogsPage() {
         {/* Page Header */}
         <header className="mb-16 md:mb-24 text-center mx-auto">
           <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-6">
-            Intelligence &amp; <span className="text-gradient-indigo">Insights</span>
+            Proven Impact &amp; <span className="text-gradient-indigo">Case Studies</span>
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">
-            Navigating the digital frontier with strategic foresight and technical precision. Explore our latest thoughts on strategy, design, and engineering.
+            Explore how we've helped industry leaders achieve technical precision and market dominance through data-driven strategies.
           </p>
         </header>
 
@@ -49,14 +49,14 @@ export default function BlogsPage() {
           ))}
         </div>
 
-        {/* Blog Grid */}
+        {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {filteredBlogs.map((blog) => (
-            <ListingCard key={blog.id} {...blog} linkPrefix="/blogs/" />
+          {filteredCaseStudies.map((study) => (
+            <ListingCard key={study.id} {...study} linkPrefix="/case-studies/" />
           ))}
-          {filteredBlogs.length === 0 && (
+          {filteredCaseStudies.length === 0 && (
             <div className="col-span-1 md:col-span-3 text-center py-12 text-on-surface-variant">
-              No blogs found for this category.
+              No case studies found for this category.
             </div>
           )}
         </div>

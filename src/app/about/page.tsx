@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustBadges from "@/components/TrustBadges";
 import StatsSection from "@/components/StatsSection";
@@ -12,13 +11,11 @@ import TeamSection from "@/components/TeamSection";
 import AchievementsSection from "@/components/AchievementsSection";
 import TechStackSection from "@/components/TechStackSection";
 import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
 export default function About() {
   return (
     <>
-      <Header />
       <main>
         <HeroSection
           badgeText="THE OBSIDIAN VISION"
@@ -140,7 +137,6 @@ export default function About() {
         <TechStackSection />
         <ContactSection />
       </main>
-      <Footer />
       <BackToTop />
     </>
   );

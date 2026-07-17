@@ -3,6 +3,7 @@ export interface ProcessStep {
     icon: string;
     title: string;
     description: string;
+    span?: Boolean
 }
 
 export interface ProcessSectionProps {
@@ -10,11 +11,13 @@ export interface ProcessSectionProps {
     title: React.ReactNode;
     description: string;
     steps: ProcessStep[];
+    layout: "flat" | "up-down"
 }
 
 export default function ProcessSection({
     badgeText = "METHODOLOGY",
     title = "Our Process",
+    layout,
     description = "A seamless, iterative approach to digital transformation, engineered for precision and scale.",
     steps = [
         {
@@ -71,7 +74,7 @@ export default function ProcessSection({
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter relative z-10">
                         {steps.map((step, idx) => (
-                            <div key={idx} className={`group relative ${idx % 2 !== 0 ? 'lg:mt-12' : ''}`}>
+                            <div key={idx} className={`group relative ${step.span && 'md:col-span-2'} ${idx % 2 && layout !== "flat" ? 'lg:mt-12' : ''}`}>
                                 <div className="glass-panel p-10 h-full flex flex-col transition-all duration-500 hover:bg-primary/5 hover:border-primary/30">
                                     <div className="relative mb-12">
                                         <span className="text-6xl font-display-lg font-bold text-white/[0.03] absolute -top-6 -left-4 group-hover:text-primary/10 transition-colors duration-500">
@@ -81,7 +84,7 @@ export default function ProcessSection({
                                             <span className="material-symbols-outlined">{step.icon}</span>
                                         </div>
                                     </div>
-                                    <h3 className="font-headline-md text-2xl text-on-surface mb-4">{step.title}</h3>
+                                    <h3 className="font-headline-md text-2xl md:min-h-16 text-on-surface mb-4">{step.title}</h3>
                                     <p className="font-body-md text-on-surface-variant">{step.description}</p>
                                 </div>
                             </div>

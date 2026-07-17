@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 
@@ -50,7 +48,6 @@ export default function ContactPage() {
 
     return (
         <>
-            <Header />
             <main className="grow pt-20">
                 {/* 1. Hero / Get in Touch Section */}
                 <section className="relative w-full min-h-[60vh] flex items-center justify-center px-margin-mobile md:px-margin-desktop py-section-padding overflow-hidden section-curve-bottom bg-mesh-dark">
@@ -300,7 +297,6 @@ export default function ContactPage() {
                 </div>
 
             </main>
-            <Footer />
         </>
     );
 }

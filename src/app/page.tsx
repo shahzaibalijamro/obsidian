@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustBadges from "@/components/TrustBadges";
 import StatsSection from "@/components/StatsSection";
@@ -14,13 +13,11 @@ import FAQSection from "@/components/FAQSection";
 import BlogSection from "@/components/BlogSection";
 import CTASection from "@/components/CTASection";
 import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <main>
         <HeroSection
           badgeText="PREMIUM DIGITAL AGENCY"
@@ -71,6 +68,7 @@ export default function Home() {
         />
         <FeaturesSection />
         <ProcessSection
+          layout="up-down"
           badgeText="METHODOLOGY"
           title="Our Process"
           description="A seamless, iterative approach to digital transformation, engineered for precision and scale."
@@ -87,10 +85,11 @@ export default function Home() {
         <ToolsTechnologiesSection />
         <FAQSection />
         <BlogSection />
-        <CTASection />
+        <div className="mb-section-padding">
+          <CTASection />
+        </div>
         <ContactSection />
       </main>
-      <Footer />
       <BackToTop />
     </>
   );

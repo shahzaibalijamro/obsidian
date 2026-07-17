@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-interface BlogCardProps {
+interface ListingCardProps {
   id: string;
   title: string;
   category: string;
@@ -8,9 +8,10 @@ interface BlogCardProps {
   readTime: string;
   excerpt: string;
   image: string;
+  linkPrefix: string;
 }
 
-export default function BlogCard({ id, title, category, date, readTime, excerpt, image }: BlogCardProps) {
+export default function ListingCard({ id, title, category, date, readTime, excerpt, image, linkPrefix }: ListingCardProps) {
   return (
     <article className="glass-panel rounded-xl overflow-hidden glass-panel-hover transition-all duration-300 flex flex-col group cursor-pointer h-full">
       <div className="relative image-zoom-container bg-surface-container border-b border-white/5 aspect-video overflow-hidden">
@@ -32,7 +33,7 @@ export default function BlogCard({ id, title, category, date, readTime, excerpt,
         <p className="font-body-md text-sm text-on-surface-variant mb-6 flex-grow line-clamp-3">
           {excerpt}
         </p>
-        <Link href={`/blogs/${id}`} className="mt-auto inline-flex items-center gap-2 text-primary font-label-md text-sm group-hover:gap-3 transition-all duration-300">
+        <Link href={`${linkPrefix}${id}`} className="mt-auto inline-flex items-center gap-2 text-primary font-label-md text-sm group-hover:gap-3 transition-all duration-300">
           Read More <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
         </Link>
       </div>

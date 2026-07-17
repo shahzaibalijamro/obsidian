@@ -1,9 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
-import BlogCard from "@/components/BlogCard";
+import ListingCard from "@/components/ListingCard";
 import { blogsData } from "@/data/blogs";
 
 interface PageProps {
@@ -38,7 +36,6 @@ export default async function SingleBlogPage({ params }: PageProps) {
 
   return (
     <>
-      <Header />
       <main className="pt-32 pb-section-padding">
         {/* Article Header */}
         <article className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
@@ -144,12 +141,11 @@ export default async function SingleBlogPage({ params }: PageProps) {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             {relatedBlogs.map((relatedBlog) => (
-              <BlogCard key={relatedBlog.id} {...relatedBlog} />
+              <ListingCard key={relatedBlog.id} {...relatedBlog} linkPrefix="/blogs/" />
             ))}
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
