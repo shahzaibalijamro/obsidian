@@ -14,10 +14,10 @@ interface ListingCardProps {
 export default function ListingCard({ id, title, category, date, readTime, excerpt, image, linkPrefix }: ListingCardProps) {
   return (
     <article className="glass-panel rounded-xl overflow-hidden glass-panel-hover transition-all duration-300 flex flex-col group cursor-pointer h-full">
-      <div className="relative image-zoom-container bg-surface-container border-b border-white/5 aspect-video overflow-hidden">
+      <div className="relative image-zoom-container bg-surface-container border-b border-line-subtle aspect-video overflow-hidden">
         <img src={image} alt={category} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
         <div className="absolute top-4 left-4">
-          <span className="px-3 py-1 bg-[#101415]/80 backdrop-blur-md text-on-surface border border-white/10 rounded-full font-label-md text-[10px] uppercase tracking-wider">
+          <span className="px-3 py-1 bg-surface-container-lowest/80 backdrop-blur-md text-on-surface border border-line rounded-full font-label-md text-[10px] uppercase tracking-wider">
             {category}
           </span>
         </div>

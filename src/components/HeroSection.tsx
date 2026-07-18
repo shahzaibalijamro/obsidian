@@ -28,9 +28,9 @@ export default function HeroSection({
     ]
 }: Partial<HeroSectionProps>) {
     return (
-        <section className="relative pt-40 pb-section-padding min-h-[90vh] flex items-center overflow-hidden section-curve-bottom bg-mesh-dark">
-            <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[100px] pointer-events-none mix-blend-screen"></div>
-            <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-inverse-primary/20 rounded-full blur-[120px] pointer-events-none mix-blend-screen"></div>
+        <section className="relative pt-40 pb-section-padding min-h-[90vh] flex items-center overflow-hidden section-curve-bottom bg-mesh">
+            <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[100px] pointer-events-none menu-orb"></div>
+            <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-inverse-primary/20 rounded-full blur-[120px] pointer-events-none menu-orb"></div>
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop relative z-10 w-full">
                 <div className="flex flex-col items-center text-center max-w-6xl mx-auto">
                     {badgeText && (
@@ -51,7 +51,7 @@ export default function HeroSection({
                                 href={btn.href}
                                 className={
                                     btn.variant === 'primary'
-                                        ? "px-8 py-4 bg-inverse-primary text-white font-label-md rounded-full text-center hover:bg-primary hover:text-inverse-primary transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(73,75,214,0.4)]"
+                                        ? "px-8 py-4 bg-inverse-primary text-on-accent font-label-md rounded-full text-center hover:bg-primary hover:text-inverse-primary transition-all duration-300 flex items-center justify-center gap-2 shadow-[var(--glow-primary-md)]"
                                         : "px-8 py-4 border border-outline-variant text-on-surface font-label-md rounded-full text-center hover:border-primary hover:text-primary transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-2"
                                 }
                             >

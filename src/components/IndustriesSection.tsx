@@ -2,7 +2,7 @@ export default function IndustriesSection() {
     return (
         <>
 
-            <section className="py-section-padding bg-mesh-light section-curve-top section-curve-bottom">
+            <section className="py-section-padding bg-mesh section-curve-top section-curve-bottom">
                 <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                     <div className="text-center mb-16">
                         <h2 className="font-display-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface mb-6">

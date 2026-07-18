@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MissionVisionSection() {
     return (
-        <section className="pt-[calc(var(--spacing-section-padding)+40px)] pb-[calc(var(--spacing-section-padding)+40px)] relative -top-10 -z-1 bg-mesh-dark" id="mission-vision">
+        <section className="pt-[calc(var(--spacing-section-padding)+40px)] pb-[calc(var(--spacing-section-padding)+40px)] relative -top-10 -z-1 bg-mesh" id="mission-vision">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="text-center mb-16">
                     <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/10 text-primary font-label-md border border-primary/20 backdrop-blur-sm uppercase tracking-wider">
@@ -16,7 +16,7 @@ export default function MissionVisionSection() {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                    <div className="glass-panel glass-panel-hover p-10 flex flex-col h-full rounded-3xl border border-white/5">
+                    <div className="glass-panel glass-panel-hover p-10 flex flex-col h-full rounded-3xl border border-line-subtle">
                         <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary border border-primary/20">
                             <span className="material-symbols-outlined">rocket_launch</span>
                         </div>
@@ -25,7 +25,7 @@ export default function MissionVisionSection() {
                             To engineer high-performance digital ecosystems that empower brands to dominate their digital landscape through precision, data-driven authority, and technical superiority.
                         </p>
                     </div>
-                    <div className="glass-panel glass-panel-hover p-10 flex flex-col h-full rounded-3xl border border-white/5">
+                    <div className="glass-panel glass-panel-hover p-10 flex flex-col h-full rounded-3xl border border-line-subtle">
                         <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary border border-primary/20">
                             <span className="material-symbols-outlined">visibility</span>
                         </div>

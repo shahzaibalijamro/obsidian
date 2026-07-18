@@ -37,7 +37,7 @@ export default function AboutSection({
                     </div>
                     <div className="pl-0 lg:pl-12">
                         {badgeText && (
-                            <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-surface-variant text-on-surface-variant font-label-md border border-white/5">
+                            <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-surface-variant text-on-surface-variant font-label-md border border-line-subtle">
                                 {badgeText}
                             </span>
                         )}

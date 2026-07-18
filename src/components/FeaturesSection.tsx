@@ -64,7 +64,7 @@ export default function FeaturesSection({
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="text-center mb-16">
                     {badgeText && (
-                        <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-surface-variant text-on-surface-variant font-label-md border border-white/5">
+                        <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-surface-variant text-on-surface-variant font-label-md border border-line-subtle">
                             {badgeText}
                         </span>
                     )}

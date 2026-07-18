@@ -41,7 +41,7 @@ export default function CaseStudiesPage() {
               onClick={() => setActiveCategory(category)}
               className={`px-4 py-2 rounded-md font-label-md text-sm transition-colors ${activeCategory === category
                 ? "bg-primary/10 text-primary border border-primary/20"
-                : "text-on-surface-variant hover:text-on-surface hover:bg-white/5 border border-transparent"
+                : "text-on-surface-variant hover:text-on-surface hover:bg-line-subtle border border-transparent"
                 }`}
             >
               {category}
@@ -62,18 +62,18 @@ export default function CaseStudiesPage() {
         </div>
 
         {/* Pagination */}
-        <div className="flex items-center justify-center gap-4 pt-8 border-t border-white/5">
-          <button className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/50 transition-colors opacity-50 cursor-not-allowed">
+        <div className="flex items-center justify-center gap-4 pt-8 border-t border-line-subtle">
+          <button className="w-10 h-10 rounded-full border border-line flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/50 transition-colors opacity-50 cursor-not-allowed">
             <span className="material-symbols-outlined text-xl">chevron_left</span>
           </button>
           <div className="flex items-center gap-2">
             <button className="w-10 h-10 rounded-full bg-primary/10 text-primary font-label-md flex items-center justify-center border border-primary/20">1</button>
-            <button className="w-10 h-10 rounded-full border border-transparent text-on-surface-variant hover:border-white/10 hover:bg-surface-container font-label-md flex items-center justify-center transition-colors">2</button>
-            <button className="w-10 h-10 rounded-full border border-transparent text-on-surface-variant hover:border-white/10 hover:bg-surface-container font-label-md flex items-center justify-center transition-colors">3</button>
+            <button className="w-10 h-10 rounded-full border border-transparent text-on-surface-variant hover:border-line hover:bg-surface-container font-label-md flex items-center justify-center transition-colors">2</button>
+            <button className="w-10 h-10 rounded-full border border-transparent text-on-surface-variant hover:border-line hover:bg-surface-container font-label-md flex items-center justify-center transition-colors">3</button>
             <span className="text-on-surface-variant px-2">...</span>
-            <button className="w-10 h-10 rounded-full border border-transparent text-on-surface-variant hover:border-white/10 hover:bg-surface-container font-label-md flex items-center justify-center transition-colors">8</button>
+            <button className="w-10 h-10 rounded-full border border-transparent text-on-surface-variant hover:border-line hover:bg-surface-container font-label-md flex items-center justify-center transition-colors">8</button>
           </div>
-          <button className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/50 transition-colors">
+          <button className="w-10 h-10 rounded-full border border-line flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/50 transition-colors">
             <span className="material-symbols-outlined text-xl">chevron_right</span>
           </button>
         </div>

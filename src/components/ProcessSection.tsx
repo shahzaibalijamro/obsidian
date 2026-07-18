@@ -47,7 +47,7 @@ export default function ProcessSection({
     ]
 }: ProcessSectionProps) {
     return (
-        <section className="py-section-padding -top-10 relative bg-mesh-light section-curve-top section-curve-bottom overflow-hidden" id="process">
+        <section className="py-section-padding -top-10 relative bg-mesh section-curve-top section-curve-bottom overflow-hidden" id="process">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end mb-20">
                     <div>
@@ -77,10 +77,10 @@ export default function ProcessSection({
                             <div key={idx} className={`group relative ${step.span && 'md:col-span-2'} ${idx % 2 && layout !== "flat" ? 'lg:mt-12' : ''}`}>
                                 <div className="glass-panel p-10 h-full flex flex-col transition-all duration-500 hover:bg-primary/5 hover:border-primary/30">
                                     <div className="relative mb-12">
-                                        <span className="text-6xl font-display-lg font-bold text-white/[0.03] absolute -top-6 -left-4 group-hover:text-primary/10 transition-colors duration-500">
+                                        <span className="text-6xl font-display-lg font-bold text-on-surface/[0.03] absolute -top-6 -left-4 group-hover:text-primary/10 transition-colors duration-500">
                                             {step.number}
                                         </span>
-                                        <div className="w-14 h-14 rounded-2xl bg-surface-variant flex items-center justify-center text-primary border border-white/5 group-hover:scale-110 transition-transform duration-500">
+                                        <div className="w-14 h-14 rounded-2xl bg-surface-variant flex items-center justify-center text-primary border border-line-subtle group-hover:scale-110 transition-transform duration-500">
                                             <span className="material-symbols-outlined">{step.icon}</span>
                                         </div>
                                     </div>

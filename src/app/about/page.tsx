@@ -52,7 +52,7 @@ export default function About() {
         <MissionVisionSection />
         <ValuesSection />
 
-        <section className="py-section-padding bg-mesh-dark section-curve-top" id="why-choose-us">
+        <section className="py-section-padding bg-mesh section-curve-top" id="why-choose-us">
           <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
             <div className="text-center mb-20">
               <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/10 text-primary font-label-md border border-primary/20 backdrop-blur-sm uppercase tracking-wider">
@@ -66,28 +66,28 @@ export default function About() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-white/5">
+              <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-line-subtle">
                 <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 text-primary border border-primary/20">
                   <span className="material-symbols-outlined text-2xl">history_edu</span>
                 </div>
                 <h3 className="font-headline-md text-xl text-on-surface mb-4">Experience</h3>
                 <p className="font-body-md text-on-surface-variant">A decade of engineering digital dominance for Tier-1 global enterprises.</p>
               </div>
-              <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-white/5">
+              <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-line-subtle">
                 <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 text-primary border border-primary/20">
                   <span className="material-symbols-outlined text-2xl">architecture</span>
                 </div>
                 <h3 className="font-headline-md text-xl text-on-surface mb-4">Technical Expertise</h3>
                 <p className="font-body-md text-on-surface-variant">Deep architectural mastery across SEO, AI integration, and complex data modeling.</p>
               </div>
-              <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-white/5">
+              <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-line-subtle">
                 <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 text-primary border border-primary/20">
                   <span className="material-symbols-outlined text-2xl">settings_suggest</span>
                 </div>
                 <h3 className="font-headline-md text-xl text-on-surface mb-4">Custom Solutions</h3>
                 <p className="font-body-md text-on-surface-variant">Bespoke digital ecosystems engineered for your specific industry challenges and growth objectives.</p>
               </div>
-              <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-white/5">
+              <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-line-subtle">
                 <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 text-primary border border-primary/20">
                   <span className="material-symbols-outlined text-2xl">visibility</span>
                 </div>

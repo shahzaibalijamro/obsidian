@@ -54,14 +54,14 @@ export default function ServicesSection({
         }
     ]
 }: ServicesSectionProps) {
-    const bgClass = theme === 'dark' ? 'bg-mesh-dark' : 'bg-mesh-light section-curve-top section-curve-bottom';
+    const bgClass = theme === 'dark' ? 'bg-mesh' : 'bg-mesh section-curve-top section-curve-bottom';
 
     return (
         <section className={`pt-section-padding pb-[calc(var(--spacing-section-padding)+40px)] ${bgClass}`} id="services">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="text-center mb-20">
                     {badgeText && (
-                        <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-surface-variant text-on-surface-variant font-label-md border border-white/5 uppercase tracking-wider">
+                        <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-surface-variant text-on-surface-variant font-label-md border border-line-subtle uppercase tracking-wider">
                             {badgeText}
                         </span>
                     )}
@@ -75,7 +75,7 @@ export default function ServicesSection({
                 <div className={`grid grid-cols-1 md:grid-cols-2 ${page === "about" ? "lg:grid-cols-3" : "lg:grid-cols-4"} gap-8`}>
                     {services.map((service, idx) => {
                         const colSpanClass = service.colSpan ? `md:col-span-2 ${service.colSpan}` : '';
-                        const bgClass = service.colSpan ? 'border-primary/20 bg-primary/5' : 'border-white/5';
+                        const bgClass = service.colSpan ? 'border-primary/20 bg-primary/5' : 'border-line-subtle';
 
                         return (
                             <div key={idx} className={`glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border ${bgClass} ${colSpanClass}`}>
@@ -97,7 +97,7 @@ export default function ServicesSection({
                                         <h3 className="font-headline-md text-xl text-on-surface mb-4">{service.title}</h3>
                                         <p className="font-body-md text-on-surface-variant flex-grow mb-8">{service.description}</p>
                                         {service.linkText && (
-                                            <a className="font-label-md text-primary mt-auto flex items-center gap-2 hover:text-white transition-colors" href={service.linkHref}>
+                                            <a className="font-label-md text-primary mt-auto flex items-center gap-2 hover:text-on-surface transition-colors" href={service.linkHref}>
                                                 {service.linkText} <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                             </a>
                                         )}

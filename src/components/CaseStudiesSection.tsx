@@ -10,7 +10,7 @@ export default function CaseStudiesSection() {
                                 Featured Case Studies</h2>
                             <p className="font-body-lg text-on-surface-variant">Fluid solutions driving tangible outcomes.</p>
                         </div>
-                        <a className="hidden md:flex font-label-md text-primary items-center gap-2 hover:text-white transition-colors"
+                        <a className="hidden md:flex font-label-md text-primary items-center gap-2 hover:text-on-surface transition-colors"
                             href="#">View All Work <span className="material-symbols-outlined text-sm">arrow_forward</span></a>
                     </div>
                     <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
@@ -60,7 +60,7 @@ export default function CaseStudiesSection() {
                         </div>
                     </div>
                     <div className="mt-12 text-center md:hidden">
-                        <a className="inline-flex font-label-md text-primary items-center gap-2 hover:text-white transition-colors"
+                        <a className="inline-flex font-label-md text-primary items-center gap-2 hover:text-on-surface transition-colors"
                             href="#">View All Work <span className="material-symbols-outlined text-sm">arrow_forward</span></a>
                     </div>
                 </div>

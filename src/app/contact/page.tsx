@@ -50,13 +50,13 @@ export default function ContactPage() {
         <>
             <main className="grow pt-20">
                 {/* 1. Hero / Get in Touch Section */}
-                <section className="relative w-full min-h-[60vh] flex items-center justify-center px-margin-mobile md:px-margin-desktop py-section-padding overflow-hidden section-curve-bottom bg-mesh-dark">
+                <section className="relative w-full min-h-[60vh] flex items-center justify-center px-margin-mobile md:px-margin-desktop py-section-padding overflow-hidden section-curve-bottom bg-mesh">
                     {/* Background Image Placeholder */}
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
                     </div>
-                    <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[100px] pointer-events-none mix-blend-screen"></div>
-                    <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-inverse-primary/20 rounded-full blur-[120px] pointer-events-none mix-blend-screen"></div>
+                    <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[100px] pointer-events-none menu-orb"></div>
+                    <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-inverse-primary/20 rounded-full blur-[120px] pointer-events-none menu-orb"></div>
 
                     <div className="relative z-10 max-w-container-max mx-auto text-center w-full">
                         <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-6 drop-shadow-2xl">
@@ -69,7 +69,7 @@ export default function ContactPage() {
                 </section>
 
                 {/* 2 & 3. Contact Grid */}
-                <section id="contact-form" className="w-full px-margin-mobile md:px-margin-desktop mt-16 py-12 pb-section-padding bg-mesh-light section-curve-top section-curve-bottom">
+                <section id="contact-form" className="w-full px-margin-mobile md:px-margin-desktop mt-16 py-12 pb-section-padding bg-mesh section-curve-top section-curve-bottom">
                     <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter">
 
                         {/* Form Column */}
@@ -140,7 +140,7 @@ export default function ContactPage() {
                                             <label className="block font-label-md text-on-surface-variant mb-2 ml-2" htmlFor="message">Project Details</label>
                                             <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={5} className="form-input-obsidian w-full text-body-md resize-none" placeholder="Tell us about your objectives..." required></textarea>
                                         </div>
-                                        <button type="submit" disabled={status === "submitting"} className="w-full bg-[#494bd6] hover:bg-[#6366f1] text-white font-label-md text-label-md py-4 rounded-xl uppercase tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(99,102,241,0.2)] hover:shadow-[0_0_30px_rgba(99,102,241,0.4)] border border-[#6366f1]/30 disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center gap-2">
+                                        <button type="submit" disabled={status === "submitting"} className="w-full bg-inverse-primary hover:bg-accent text-on-primary font-label-md text-label-md py-4 rounded-xl uppercase tracking-widest transition-all duration-300 shadow-[var(--glow-primary-md)] hover:shadow-[var(--glow-primary-lg)] border border-accent/30 disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center gap-2">
                                             {status === "submitting" ? (
                                                 <>
                                                     <span className="material-symbols-outlined animate-spin">progress_activity</span>
@@ -232,7 +232,7 @@ export default function ContactPage() {
                 </section>
 
                 {/* 4. Why Contact Us Section */}
-                <section className="py-[calc(var(--spacing-section-padding)+40px)] -top-10 relative -z-1 bg-mesh-dark" id="why-contact-us">
+                <section className="py-[calc(var(--spacing-section-padding)+40px)] -top-10 relative -z-1 bg-mesh" id="why-contact-us">
                     <div className="max-w-container-max mx-auto px-margin-desktop">
                         <div className="text-center mb-16">
                             <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/10 text-primary font-label-md border border-primary/20 backdrop-blur-sm uppercase tracking-wider">Partner With Us</span>
@@ -271,7 +271,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* 6. Social Media Section */}
-                <section className="py-16 bg-mesh-dark">
+                <section className="py-16 bg-mesh">
                     <div className="max-w-container-max mx-auto px-margin-desktop text-center">
                         <h3 className="font-headline-md text-2xl text-on-surface mb-8">Connect With The Architects</h3>
                         <div className="flex justify-center items-center gap-6">

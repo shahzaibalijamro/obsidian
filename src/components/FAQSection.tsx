@@ -40,7 +40,7 @@ export default function FAQSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-section-padding bg-mesh-light section-curve-top section-curve-bottom">
+    <section className="py-section-padding bg-mesh section-curve-top section-curve-bottom">
       <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop max-w-3xl">
         <div className="text-center mb-12">
           <h2 className="font-display-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface mb-6">

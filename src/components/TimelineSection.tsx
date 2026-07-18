@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TimelineSection() {
     return (
-        <section className="py-section-padding bg-mesh-light section-curve-top section-curve-bottom" id="timeline">
+        <section className="py-section-padding bg-mesh section-curve-top section-curve-bottom" id="timeline">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="text-center mb-20">
                     <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/10 text-primary font-label-md border border-primary/20 backdrop-blur-sm">
@@ -16,17 +16,17 @@ export default function TimelineSection() {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-white/5">
+                    <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-line-subtle">
                         <div className="text-primary font-display-lg text-2xl mb-4">2018</div>
                         <h3 className="font-headline-md text-xl text-on-surface mb-4">The Genesis</h3>
                         <p className="font-body-md text-on-surface-variant">Founded as a technical SEO collective focused on infrastructure-level dominance.</p>
                     </div>
-                    <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-white/5">
+                    <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-line-subtle">
                         <div className="text-primary font-display-lg text-2xl mb-4">2020</div>
                         <h3 className="font-headline-md text-xl text-on-surface mb-4">Intelligence Integration</h3>
                         <p className="font-body-md text-on-surface-variant">Expanded into AI-driven data modeling and predictive search analytics.</p>
                     </div>
-                    <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-white/5">
+                    <div className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl border border-line-subtle">
                         <div className="text-primary font-display-lg text-2xl mb-4">2022</div>
                         <h3 className="font-headline-md text-xl text-on-surface mb-4">Global Command</h3>
                         <p className="font-body-md text-on-surface-variant">Scaled operations to serve Tier-1 financial and tech enterprises across 3 continents.</p>

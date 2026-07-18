@@ -64,7 +64,7 @@ export default function LegalPageLayout({
                     
                     {/* Directory Sidebar (Sticky) */}
                     <aside className="md:col-span-3 hidden md:block sticky top-32 glass-panel rounded-xl p-8 h-max">
-                        <h3 className="font-headline-md text-headline-md text-on-surface mb-6 pb-4 border-b border-white/10">Directory</h3>
+                        <h3 className="font-headline-md text-headline-md text-on-surface mb-6 pb-4 border-b border-line">Directory</h3>
                         <nav className="flex flex-col gap-4">
                             {directoryLinks.map((link) => (
                                 <a 

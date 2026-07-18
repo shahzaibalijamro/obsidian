@@ -16,7 +16,7 @@ export default function StatsSection({
     ]
 }: StatsSectionProps) {
     return (
-        <section className="py-24 bg-mesh-light section-curve-top section-curve-bottom">
+        <section className="py-24 bg-mesh section-curve-top section-curve-bottom">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="glass-panel p-6 sm:p-12">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-gutter">

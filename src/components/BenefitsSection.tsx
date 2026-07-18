@@ -29,7 +29,7 @@ export default function BenefitsSection({
     cards = []
 }: BenefitsSectionProps) {
     return (
-        <section className="py-section-padding bg-mesh-dark section-curve-top">
+        <section className="py-section-padding bg-mesh section-curve-top">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="text-center mb-20">
                     {badgeText && (
@@ -70,7 +70,7 @@ export default function BenefitsSection({
                                 <>
                                     <div className="grid grid-cols-3 gap-4 text-center">
                                         {card.metrics.map((metric, mIdx) => (
-                                            <div key={mIdx} className="p-3 bg-white/5 rounded-xl">
+                                            <div key={mIdx} className="p-3 bg-line-subtle rounded-xl">
                                                 <p className="text-primary font-bold">{metric.value}</p>
                                                 <p className="text-xs opacity-60">{metric.label}</p>
                                             </div>

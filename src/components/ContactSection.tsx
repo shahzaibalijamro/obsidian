@@ -3,7 +3,7 @@ export default function ContactSection() {
         <>
 
             <section className="py-section-padding relative overflow-hidden" id="contact">
-                <div className="absolute inset-0 bg-mesh-dark z-0"></div>
+                <div className="absolute inset-0 bg-mesh z-0"></div>
                 <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                         <div>
@@ -93,7 +93,7 @@ export default function ContactSection() {
                                 </div>
                                 <div className="flex flex-col gap-4 pt-4">
                                     <button
-                                        className="w-full py-4 bg-inverse-primary text-white font-label-md rounded-xl hover:bg-primary hover:text-inverse-primary transition-all duration-300 shadow-lg"
+                                        className="w-full py-4 bg-inverse-primary text-on-primary font-label-md rounded-xl hover:bg-primary hover:text-inverse-primary transition-all duration-300 shadow-lg"
                                         type="submit">
                                         Send Message
                                     </button>

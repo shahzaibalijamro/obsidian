@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="bg-surface border-t border-white/5 w-full py-section-padding">
+        <footer className="bg-surface border-t border-line-subtle w-full py-section-padding">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-16">
 
@@ -62,9 +62,9 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="pt-8 border-t border-white/5">
+                <div className="pt-8 border-t border-line-subtle">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="font-body-md text-on-surface-variant text-sm text-center md:text-left">© 2026 OBSIDIAN,
+                        <p className="font-body-md text-on-surface-variant text-sm text-center md:text-left">Â© 2026 OBSIDIAN,
                             All rights reserved.</p>
                         <div className="flex gap-6"><a href="/privacy"
                             className="font-body-md text-on-surface-variant text-sm hover:text-primary transition-colors duration-300">Privacy

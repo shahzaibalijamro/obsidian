@@ -124,7 +124,7 @@ export default function TestimonialsSection({
                             <button
                                 key={idx}
                                 onClick={() => setCurrentIndex(idx)}
-                                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${currentIndex === idx ? "bg-primary" : "bg-white/20 hover:bg-white/40"
+                                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${currentIndex === idx ? "bg-primary" : "bg-line hover:bg-line"
                                     }`}
                             ></button>
                         ))}

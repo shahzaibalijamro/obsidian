@@ -41,7 +41,7 @@ export default function PerformanceSection({
     ]
 }: PerformanceSectionProps) {
     return (
-        <section className="py-section-padding bg-mesh-dark">
+        <section className="py-section-padding bg-mesh">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
                 <div className="text-center mb-20">
                     {badgeText && (
@@ -60,7 +60,7 @@ export default function PerformanceSection({
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
                     {items.map((item, idx) => (
-                        <div key={idx} className="p-8 border-l border-white/10 hover:border-primary transition-colors group">
+                        <div key={idx} className="p-8 border-l border-line hover:border-primary transition-colors group">
                             <h4 className="font-label-md text-primary mb-4 uppercase tracking-widest">{item.step}</h4>
                             <h3 className="font-headline-md text-xl md:min-h-14 text-on-surface mb-4">{item.title}</h3>
                             <p className="font-body-md text-on-surface-variant">{item.description}</p>

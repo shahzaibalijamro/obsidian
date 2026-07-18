@@ -25,7 +25,7 @@ export default function ToolsTechnologiesSection({
                 {categories ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
                         {categories.map((cat, idx) => (
-                            <div key={idx} className="glass-panel p-6 rounded-2xl border border-white/5">
+                            <div key={idx} className="glass-panel p-6 rounded-2xl border border-line-subtle">
                                 <p className="font-label-md text-primary mb-3 uppercase tracking-wider">{cat.category}</p>
                                 <div className="flex flex-col gap-2">
                                     {cat.tools.map((tool, i) => (
