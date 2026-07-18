@@ -153,6 +153,22 @@ export default function SocialMediaManagementPage() {
                 <CaseStudiesSection />
                 <IndustriesSection />
                 <TestimonialsSection />
+
+                <FeaturesSection
+                    badgeText="TECH STACK"
+                    title="Our Social Media Management Tech Arsenal"
+                    description="Precision-engineered tools for scheduling, community management, analytics, and brand reputation monitoring."
+                    columns={3}
+                    features={[
+                        { icon: "edit_calendar", title: "Scheduling & Publishing", description: "Later, Buffer, Hootsuite" },
+                        { icon: "palette", title: "Content Creation", description: "Adobe Creative Cloud, Canva, CapCut" },
+                        { icon: "query_stats", title: "Analytics & Reporting", description: "Sprout Social, Google Analytics 4" },
+                        { icon: "record_voice_over", title: "Social Listening", description: "Brandwatch, Mention" },
+                        { icon: "hub", title: "Community Management", description: "Sprout Social, Agorapulse" },
+                        { icon: "reviews", title: "Reputation Management", description: "Google Business Profile, Yelp for Business" }
+                    ]}
+                />
+
                 <FAQSection />
 
                 <div className="my-section-padding">

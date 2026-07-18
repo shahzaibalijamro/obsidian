@@ -11,13 +11,13 @@ export interface ProcessSectionProps {
     title: React.ReactNode;
     description: string;
     steps: ProcessStep[];
-    layout: "flat" | "up-down"
+    layout?: "flat" | "up-down"
 }
 
 export default function ProcessSection({
     badgeText = "METHODOLOGY",
     title = "Our Process",
-    layout,
+    layout = "flat",
     description = "A seamless, iterative approach to digital transformation, engineered for precision and scale.",
     steps = [
         {

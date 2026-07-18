@@ -133,6 +133,22 @@ export default function SocialMediaMarketingPage() {
                 <CaseStudiesSection />
                 <IndustriesSection />
                 <TestimonialsSection />
+
+                <FeaturesSection
+                    badgeText="TECH STACK"
+                    title="Our Social Media Marketing Tech Arsenal"
+                    description="Precision-engineered tools for content creation, scheduling, social analytics, and community engagement."
+                    columns={3}
+                    features={[
+                        { icon: "edit_calendar", title: "Content Planning & Scheduling", description: "Later, Buffer, Hootsuite" },
+                        { icon: "palette", title: "Content Creation", description: "Adobe Creative Cloud, Canva, CapCut" },
+                        { icon: "query_stats", title: "Social Analytics", description: "Sprout Social, Google Analytics 4" },
+                        { icon: "record_voice_over", title: "Social Listening", description: "Brandwatch, Mention" },
+                        { icon: "ads_click", title: "Paid Social Advertising", description: "Meta Ads Manager, TikTok Ads Manager" },
+                        { icon: "hub", title: "Community Management", description: "Sprout Social, Agorapulse" }
+                    ]}
+                />
+
                 <FAQSection />
 
                 <div className="my-section-padding">

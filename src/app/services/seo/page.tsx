@@ -8,7 +8,6 @@ import ProcessSection from "@/components/ProcessSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import IndustriesSection from "@/components/IndustriesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import ToolsTechnologiesSection from "@/components/ToolsTechnologiesSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import ContactSection from "@/components/ContactSection";
@@ -113,15 +112,22 @@ export default function SeoServicePage() {
                 <IndustriesSection />
                 <TestimonialsSection />
 
-                <ToolsTechnologiesSection
-                    title="SEO & Performance Stack"
-                    categories={[
-                        { category: "Keyword Research", tools: ["Semrush", "Ahrefs"] },
-                        { category: "Technical Audit", tools: ["Screaming Frog", "Search Console"] },
-                        { category: "Analytics & Tracking", tools: ["Google Analytics 4", "Rank Tracker"] },
-                        { category: "Optimization", tools: ["PageSpeed Insights", "Yoast SEO"] }
-                    ]}
-                />
+                <div className="relative -top-8">
+                    <FeaturesSection
+                        badgeText="TECH STACK"
+                        title="Our SEO Tech Arsenal"
+                        description="Precision-engineered tools for keyword research, technical auditing, analytics, and on-page optimization."
+                        columns={3}
+                        features={[
+                            { icon: "key", title: "Keyword Research", description: "Semrush, Ahrefs" },
+                            { icon: "troubleshoot", title: "Technical Audit", description: "Screaming Frog, Search Console" },
+                            { icon: "query_stats", title: "Analytics & Tracking", description: "Google Analytics 4, Rank Tracker" },
+                            { icon: "speed", title: "Optimization", description: "PageSpeed Insights, Yoast SEO" },
+                            { icon: "link", title: "Link Building", description: "Ahrefs, Majestic" },
+                            { icon: "description", title: "Content Optimization", description: "Clearscope, Surfer SEO" }
+                        ]}
+                    />
+                </div>
 
                 <FAQSection />
 
