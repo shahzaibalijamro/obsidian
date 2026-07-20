@@ -8,7 +8,7 @@ import ProcessSection from "@/components/ProcessSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import IndustriesSection from "@/components/IndustriesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import ToolsTechnologiesSection from "@/components/ToolsTechnologiesSection";
+import AreasWeServe from "@/components/AreasWeServe";
 import FAQSection from "@/components/FAQSection";
 import BlogSection from "@/components/BlogSection";
 import CTASection from "@/components/CTASection";
@@ -82,7 +82,7 @@ export default function Home() {
         <CaseStudiesSection />
         <IndustriesSection />
         <TestimonialsSection />
-        <ToolsTechnologiesSection />
+        <AreasWeServe />
         <FAQSection />
         <BlogSection />
         <div className="mb-section-padding">
