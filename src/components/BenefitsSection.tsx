@@ -13,6 +13,7 @@ export interface BenefitCard {
     bulletColumns?: 1 | 2;
     metrics?: BenefitMetric[];
     note?: string;
+    span?: boolean;
 }
 
 export interface BenefitsSectionProps {
@@ -20,14 +21,21 @@ export interface BenefitsSectionProps {
     title?: string | React.ReactNode;
     description?: string | React.ReactNode;
     cards?: BenefitCard[];
+    columns?: 2 | 3;
 }
 
 export default function BenefitsSection({
     badgeText,
     title,
     description,
-    cards = []
+    cards = [],
+    columns = 2
 }: BenefitsSectionProps) {
+    const gridClass = columns === 3
+        ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8";
+    const spanClass = columns === 3 ? "lg:col-span-3" : "md:col-span-2 lg:col-span-2";
+
     return (
         <section className="py-section-padding bg-mesh section-curve-top">
             <div className="max-w-container-max mx-auto px-margin-mobile sm:px-margin-desktop">
@@ -48,9 +56,9 @@ export default function BenefitsSection({
                         </p>
                     )}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div className={gridClass}>
                     {cards.map((card, idx) => (
-                        <div key={idx} className="glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl">
+                        <div key={idx} className={`glass-panel glass-panel-hover p-8 flex flex-col h-full rounded-3xl ${card.span ? spanClass : ''}`}>
                             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 text-primary border border-primary/20">
                                 <span className="material-symbols-outlined text-2xl">{card.icon}</span>
                             </div>
