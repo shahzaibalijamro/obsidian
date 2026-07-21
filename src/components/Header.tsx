@@ -212,7 +212,9 @@ export default function Header() {
                 <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[100px] pointer-events-none menu-orb z-0"></div>
                 <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-inverse-primary/20 rounded-full blur-[120px] pointer-events-none menu-orb z-0"></div>
 
-                <div className="relative z-10 flex flex-col w-full px-margin-mobile py-24 overflow-y-auto h-full">
+                <div className="h-20 w-full flex-shrink-0 relative z-10"></div>
+
+                <div className="relative z-10 flex flex-col w-full px-margin-mobile pt-4 pb-24 overflow-y-auto flex-1">
                     {/* Services accordion */}
                     <div className="w-full mb-2">
                         <button
